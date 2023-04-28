@@ -13,6 +13,7 @@ html    {
 body{
     margin: 0;
     position: relative;
+    height: 100%;
 }
 
 
@@ -42,6 +43,7 @@ h1{
     background-color: var(--black);
     color: var(--white);
     font-size: 2em;
+    width: 100%;
 }
 
 h2 {
@@ -70,8 +72,6 @@ a{
 }
 
 .project-img {
-    display: grid;
-    justify-content: center;
     height: 100px;
     width: auto;
     border-radius: 10px;
@@ -87,9 +87,10 @@ a{
     flex-wrap: wrap;
     background-color: var(--ash);
     margin: 50px;
-    padding: 30px;
+    padding: 20px;
     border: 2px var(--navyblue) solid;
     border-radius: 20px;
+    gap: 10px;
     
     
 }
@@ -102,10 +103,8 @@ a{
     padding: 10px;
     text-align: center;
     margin: 5px;
-    padding: 20px;
     background-color: var(--white);
-    height: 200px;
-    width: 150px;
+    flex: 1;
 
 }
 
@@ -152,7 +151,7 @@ h4{
 
 .social-icons {
     display: grid;
-    font-size: 3rem;
+    font-size: 2rem;
     grid-template-columns: repeat(4, 50px);
     grid-template-rows: repeat(4, auto);
     justify-content: center;
@@ -166,12 +165,12 @@ h4{
   #aboutme  {
     position: relative;
     top: 0;
-    left: 29%;
+    left: 25%;
     align-items: center;
     height: auto;
-    width: 500px;
+    width: 50%;
     background-color: var(--ash);
-    padding: 40px;
+    padding: 20px;
     border-radius: 20px;
   }
 
@@ -183,17 +182,18 @@ h4{
   }
 
   .renzeljpeg2  {
-    width: 180px;
-    height: 300px;
+    width: 150px;
+    height: 250px;
     float: left;
     margin-right: 20px;
   }
+
 
   /* JOB EXPERIENCE */
 
   #work-history {
     height: auto;
-    width: 500px;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -212,7 +212,7 @@ h4{
 
     .roles{
     font-size: 0.6em;
-    width: 420px;
+    width: auto;
     font-weight: 100;
     color: var(--navyblue);
     font-family: 'Poppins', sans-serif;
@@ -225,7 +225,7 @@ h4{
   
   .roles-list{
     font-size: 0.6em;
-    width: 420px;
+    width: auto;
     font-weight: 100;
     color: var(--navyblue);
     font-family: 'Poppins', sans-serif;
@@ -245,19 +245,180 @@ h4{
   }
 
   #contact-info {
-    position: relative;
-    top: 10rem;
-    left: 38%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
     background-color: var(--ash);
-    height: auto;
-    width: 300px;
-    padding: 20px;
-    border-radius: 20px;
+    width: 60%;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
   }
 
+  
+  .footer-nav.contact {
+    display: flex;
+    justify-content: center;
+    margin-top: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* <!-- 
+Mobile Devices: 319px — 480px
+iPads and Tablets: 481px — 1200px
+Laptops: 1201px — 1600px
+Desktops: 1601px and more
+--> */
+
+@media (min-width: 319px) and (max-width: 480px) {
+
+/* SCREENS OF MOBILE DEVICES MAX-WIDTH 480PX */
+      .project-img {
+        height: 70px;
+    }
+
+    a{
+      color: var(--black);
+      font-size: 10px;
+      margin: 0px;
+    }
+
+    h1{
+      background-color: var(--black);
+      color: var(--white);
+      font-size: 1em;
+      width: 100%;
+  }
+
+    h2   {
+      font-size: 0.8em;
+      margin: 12px;
+    }
+
+    h3  {
+      font-size: 0.6em;
+      margin: 12px;
+    }
+
+    #rickyjpeg {
+      height: 60px;
+      width:50px;
+      position: absolute;
+      top: -10px;
+      left: 3%;
+    }
+
+    #project-card{
+      padding: 10px;
+      width: fit-content;
+      /* margin: 5px; */
+  
+  }
+
+  .fab {
+    margin: 0 5px;
+    font-size: 1.5em;
+  }
+
+  .footer-text{
+    font-size: 10px;
+  }
 
   .footer-nav.contact {
     display: flex;
     justify-content: center;
-    margin-top: 38%;
+    margin-top: 170%;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .renzeljpeg2  {
+    width: 80px;
+    height: 120px;
+    margin-right: 10px;
+  }
+
+  div#aboutme .about  {
+    font-size: 0.6em;
+  }
+
+
+  div#aboutme .remark  {
+    font-size: 0.8em;
+
 }
+
+.position-roles{
+  font-size: 0.6em;
+}
+
+.social-links  {
+  margin: 0 5px;
+  font-size: 0.6em;
+}
+
+}
+
+
+
+@media (min-width:  481px) and (max-width: 1200px) {
+
+  /* SCREENS OF IPADS AND TABLETS MAX-WIDTH 1200PX */
+        .project-img {
+          height: 80px;
+      }
+  
+      a{
+        color: var(--black);
+        font-size: 12px;
+        margin: 0px;
+      }
+  
+      h1 {
+        font-size: 1.5em;
+      }
+  
+      h2   {
+        font-size: 1em;
+        margin: 15px;
+      }
+  
+      h3  {
+        font-size: 0.8em;
+        margin: 15px;
+      }
+  
+      #rickyjpeg {
+        height: 60px;
+        width:50px;
+        position: absolute;
+        top: -10px;
+        left: 2%;
+      }
+  
+      #project-card{
+        padding: 10px;
+        width: fit-content;
+        /* margin: 5px; */
+    
+    }
+  
+    .fab {
+      margin: 0 5px;
+      font-size: 1.5em;
+    }
+    
+    .renzeljpeg2  {
+      width: 120px;
+      height: 200px;
+      margin-right: 10px;
+    }
+
+    .social-links  {
+      margin: 0 5px;
+      font-size: 1em;
+    }
+    
+
+  }
